@@ -278,7 +278,6 @@ body {
  .hero-image {
      background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../media/hero-bg.jpg);
      height: 30rem;
-     /* width: 100%; */
      background-size: cover;
      position: relative;
  }
@@ -289,33 +288,34 @@ body {
  h1 {
      font-size: 2.5rem;
      font-weight: 800;
+     padding-top: 2rem;
  }
  .hero-heading p {
      font-size: 1.3rem;
      padding-bottom: 2rem;
  }
- .arrow {
-     width: 12%;
-    border-radius: 2rem;
-    font-weight: 500;
-    font-size: 0.8rem;
-    border: none;
-    background-color: rgba(88,75,72,0.8);
+ .get-btn {
+     font-size: 0.8rem;
+     font-weight: 400;
+     color: var(--text-white);
+     padding: 0.5rem 2rem;
+     padding-left: 3.3rem;
+     background-color: rgba(92, 71, 66, 0.7);
+     border-radius: 2rem;
  }
- .arrow:hover {
+ .arrow-icon{
+     height: 2.5rem;
+     width: 2.5rem;
+     border-radius: 50%;
+     background-color: var(--primary);
+     position: absolute;
+ }
+ .arrow .get-btn:hover {
      background-color: var(--primary);
  }
- .arrow a {
-    font-weight: 500;
-    font-size: 0.8rem;
-    color: var(--text-white);
-    padding: 0.5rem 1rem 0.5rem 0;
- }
- .arrow i {
-    padding: 0.7rem 0.9rem;
-    border-radius: 50%;
-    color: var(--text-white);
-    background-color: var(--primary);
+ .arrow-icon i {
+     font-size: 1.5rem;
+     color: var(--text-white);
  }
  .active-article {
      background-color: var(--primary);
@@ -385,7 +385,7 @@ body {
     padding: 4rem 0;
  }
  .about-article img {
-     height: 50vh;
+     height: 90vh;
  }
  .play-icon i {
      color: var(--text-white);
@@ -462,10 +462,8 @@ body {
 
 
  /* services */
-
  .services {
      background-color: rgb(254,249,247);
-     /* width: 100%; */
  }
  .services-article-box {
      padding: 3rem 0;
@@ -587,7 +585,6 @@ body {
 .testimonial-box {
     padding: 4rem 8rem;
     min-width: 100%;
-    /* overflow: auto; */
 }
 .testimonial-container::-webkit-scrollbar {
     display: none;
@@ -840,12 +837,12 @@ body {
    
 }
 form {
-    padding: 2rem;
+    padding: 2rem 1.5rem;
     box-shadow: 1px 0 9px 8px rgb(230, 230, 230);
 }
 .form-control {
     margin-bottom: 1rem;
-    padding: 0.5rem;
+    padding: 0.7rem;
     outline: none;
     width: 100%;
 }
@@ -1042,6 +1039,12 @@ form {
     .heading {
         height: 6rem;
     }
+    .about {
+        margin-top: 10rem;
+    }
+    .team-image, .portfolio-image {
+        height: 70vh;
+    }
 }
     @media screen and (max-width: 768px) {
         .container {
@@ -1071,6 +1074,16 @@ form {
         }
         .nav-menu a {
             font-size: 1.5rem;
+        }
+        .question-box {
+            width: 100%;
+            margin: 0;
+        }
+        .address-container, .form {
+            padding: 0;
+        }
+        .about {
+            margin-top: 5rem;
         }
 
     /* responsive navbar */
