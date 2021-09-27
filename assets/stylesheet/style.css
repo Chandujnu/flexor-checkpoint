@@ -273,7 +273,7 @@ body {
  }
  /* Hero */
  .hero {
-     height: 130vh;
+     height: 140vh;
  }
  .hero-image {
      background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../media/hero-bg.jpg);
@@ -679,7 +679,7 @@ body {
 }
 .team-image {
     background-size: cover;
-    height: 40vh;
+    height: 35vh;
     border-radius: 0.3rem;
     background-position: 50% 50%;
 }
@@ -847,6 +847,7 @@ form {
     margin-bottom: 1rem;
     padding: 0.5rem;
     outline: none;
+    width: 100%;
 }
 .send-btn {
     border:none;
@@ -1038,6 +1039,9 @@ form {
     .med-center {
         text-align: center;
     }
+    .heading {
+        height: 6rem;
+    }
 }
     @media screen and (max-width: 768px) {
         .container {
@@ -1059,10 +1063,15 @@ form {
         .hero-blog nav {
             margin-top: 4rem;
         }
-        .navbar {
-            background-color: rgb(235, 235, 235);
+        body .heading {
+            height: 4rem;
         }
-    
+        .portfolio-image, .team-image {
+            height: 60vh;
+        }
+        .nav-menu a {
+            font-size: 1.5rem;
+        }
 
     /* responsive navbar */
     .nav-menu {
@@ -1086,18 +1095,9 @@ form {
         display: inline-block;
     }
     .bars {
-        position: fixed;
         font-size: 24px;
         color: var(--text-white);
         z-index: 91;
-        top: 20px;
-        right: 16px;
         display: inline;
-    }
-    .brand {
-        position: fixed;
-        z-index: 9;
-        top: 20px;
-        left: 16px;
     }
 }
