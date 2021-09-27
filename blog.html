@@ -14,28 +14,32 @@
 <body>
     <header class="heading">
         <nav class="navbar container flex justify-between item-center">
-            <a href="index.html">Flexor</a>
+            <a class="brand" href="index.html">Flexor</a>
+            <label class="bars" for="toggle">
+                <i class="fas fa-bars"></i>
+            </label>
+            <input id="toggle" type="checkbox">
             <ul class="nav-menu flex">
                 <li>
-                    <a href="index.html">Home</a>
+                    <a class="active" href="#">Home</a>
                 </li>
                 <li>
-                    <a href="#">About</a>
+                    <a href="#about">About</a>
                 </li>
                 <li>
-                    <a href="#">Services</a>
+                    <a href="#services">Services</a>
                 </li>
                 <li>
-                    <a href="#">Portfolio</a>
+                    <a href="#portfolio">Portfolio</a>
                 </li>
                 <li>
-                    <a href="#">Team</a>
+                    <a href="#team">Team</a>
                 </li>
                 <li>
-                    <a href="#">Pricing</a>
+                    <a href="#pricing">Pricing</a>
                 </li>
                 <li>
-                    <a href="#">Blog</a>
+                    <a href="blog.html">Blog</a>
                 </li>
                 <li class="sub-menu-box">
                     <a href="#">
@@ -96,8 +100,8 @@
               <h4 class="blog-header">Blog</h4>
          </section>
          <section class="blog-box">
-             <div class="flex container justify-between wrap med-wrap">
-                 <article class="blog-article flex-30 flex-47">
+             <div class="flex container justify-between wrap med-wrap sm-wrap">
+                 <article class="blog-article flex-30 flex-47 sm-flex-100">
                      <div>
                          <img class="width-full" src="./assets/media/blog-1.jpg" alt="blog-1 image">
                      </div>
@@ -107,7 +111,7 @@
                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quisquam repudiandae, mollitia est blanditiis soluta laudantium recusandae? Minus distinctio, necessitatibus voluptatem quisquam nisi fuga?</p>
                      <a class="btn blog-btn" href="#">Read More</a>
                  </article>
-                 <article class="blog-article flex-30 flex-47">
+                 <article class="blog-article flex-30 flex-47 sm-flex-100">
                     <div>
                         <img class="width-full" src="./assets/media/blog-2.jpg" alt="blog-2 image">
                     </div>
@@ -117,7 +121,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quisquam repudiandae, mollitia est blanditiis soluta laudantium recusandae? Minus distinctio, necessitatibus voluptatem quisquam nisi fuga?</p>
                     <a class="btn blog-btn" href="#">Read More</a>
                 </article>
-                <article class="blog-article flex-30 flex-47">
+                <article class="blog-article flex-30 flex-47 sm-flex-100">
                     <div>
                         <img class="width-full" src="./assets/media/blog-3.jpg" alt="blog-3 image">
                     </div>
@@ -127,7 +131,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quisquam repudiandae, mollitia est blanditiis soluta laudantium recusandae? Minus distinctio, necessitatibus voluptatem quisquam nisi fuga?</p>
                     <a class="btn blog-btn" href="#">Read More</a>
                 </article>
-                <article class="blog-article flex-30 flex-47">
+                <article class="blog-article flex-30 flex-47 sm-flex-100">
                     <div>
                         <img class="width-full" src="./assets/media/blog-4.jpg" alt="blog-3 image">
                     </div>
@@ -137,7 +141,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quisquam repudiandae, mollitia est blanditiis soluta laudantium recusandae? Minus distinctio, necessitatibus voluptatem quisquam nisi fuga?</p>
                     <a class="btn blog-btn" href="#">Read More</a>
                 </article>
-                <article class="blog-article flex-30 flex-47">
+                <article class="blog-article flex-30 flex-47 sm-flex-100">
                     <div>
                         <img class="width-full" src="./assets/media/blog-5.jpg" alt="blog-3 image">
                     </div>
@@ -147,7 +151,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quisquam repudiandae, mollitia est blanditiis soluta laudantium recusandae? Minus distinctio, necessitatibus voluptatem quisquam nisi fuga?</p>
                     <a class="btn blog-btn" href="#">Read More</a>
                 </article>
-                <article class="blog-article flex-30 flex-47">
+                <article class="blog-article flex-30 flex-47 sm-flex-100">
                     <div>
                         <img class="width-full" src="./assets/media/blog-6.jpg" alt="blog-3 image">
                     </div>
@@ -162,8 +166,8 @@
     </main>
     <footer class="footer">
         <div class="container bg-pink">
-            <div class="footer-box flex justify-between">
-                <address class="footer-address flex-20">
+            <div class="footer-box flex justify-between med-wrap">
+                <address class="footer-address flex-20 flex-47">
                     <h4>Flexor</h4>
                     <p>A108 Adam Street, New York, NY 535022 United States</p>
                 
@@ -172,7 +176,7 @@
                         <a href="info@example.com">Email: info@example.com</a>
                     </div>
                 </address>
-                <nav class="footer-navbar footer-link">
+                <nav class="footer-navbar footer-link flex-20 flex-47">
                     <h2>Useful Links</h2>
                     <ul class="footer-nav-menu">
                         <li>
@@ -192,7 +196,7 @@
                         </li>
                     </ul>
                 </nav>
-                <nav class="footer-navbar">
+                <nav class="footer-navbar flex-20 flex-47">
                     <h2>Our Services</h2>
                     <ul class="footer-nav-menu">
                         <li>
@@ -212,7 +216,7 @@
                         </li>
                     </ul>
                 </nav>
-                <article class="flex-30">
+                <article class="flex-30 flex-47">
                     <h2>Join Our Newsletter</h2>
                     <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
                     <div class="subscribe-bar flex justify-end">
@@ -221,12 +225,12 @@
                 </article>
             </div>
         </div>
-        <div class="copyright-box flex justify-between container med-column med-center">
+        <div class="copyright-box flex med-center container med-column">
             <div class="copyright">
                 <small>&copy Copyright <a href="#">Flexor</a> . All Rights Reserved</small>
                 <p>Designed by <a href="#">BootstrapMade</a></p>
             </div>
-            <nav class="footer-social-link flex">
+            <nav class="footer-social-link flex sm-center">
                 <a class="center" href="#">
                     <i class="fab fa-twitter"></i>
                 </a>
