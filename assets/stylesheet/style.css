@@ -469,19 +469,18 @@ body {
      padding: 3rem 0;
  }
  legend {
-     color: var(--text-white);
      background-color: var(--primary);
      height: 3rem;
      width: 3rem;
      border-radius: 50%;
      font-size: 1rem;
  }
+ legend i {
+     color: var(--text-white);
+ }
  legend:hover {
      color: var(--primary);
      background-color: var(--text-white);
-     height: 3rem;
-     width: 3rem;
-     border-radius: 50%;
      border: 1px solid var(--primary);
 
  }
